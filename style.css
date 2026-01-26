@@ -1,9 +1,8 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows:;
-  border: 0px;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1em;
+  margin-top: 5px;
 }
 
 .item {
