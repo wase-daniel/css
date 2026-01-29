@@ -1,7 +1,7 @@
 .danny {
   background-color: brown;
   height: 200px;
-  width: 200px;
+  width: 800px;
   font-size: 2em;
   display: flex;
   justify-content: center;
@@ -12,6 +12,14 @@ body {
   display: flex;
   gap: 4px;
   display: flex;
-  flex-shrink: 1;
   flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  body {
+    background-color: cadetblue;
+    color: rgb(0, 0, 0);
+  }
+  .danny {
+    background-color: aqua;
+  }
 }
