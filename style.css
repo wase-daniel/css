@@ -2,14 +2,26 @@ body {
   display: flex;
 }
 
+.danny {
+  padding: 4px;
+}
+
 #box {
+  border: 5px solid black;
   margin: auto;
   margin-left: 20px;
 }
 
-@media (min-width: 700px) {
+@media (max-width: 600px) {
   body {
-    color: rgb(17, 0, 255);
-    background-color: red;
+    color: rgb(27, 20, 249);
+    background-color: rgb(222, 255, 132);
+  }
+  #box {
+    color: rgb(255, 166, 181);
+    font-size: 0.4rem;
+  }
+  .danny {
+    font-size: 0.4rem;
   }
 }
