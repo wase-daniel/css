@@ -1,25 +1,18 @@
-.danny {
-  background-color: brown;
-  height: 200px;
-  width: 800px;
-  font-size: 2em;
+header {
+  min-height: 100px;
+  border: 3px solid rgb(255, 236, 139);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgb(255, 224, 184);
 }
 
-body {
-  display: flex;
-  gap: 4px;
-  display: flex;
-  flex-wrap: wrap;
+#box-1 {
+  margin: auto;
+  margin-left: 10px;
 }
-@media (max-width: 600px) {
-  body {
-    background-color: cadetblue;
-    color: rgb(0, 0, 0);
-  }
-  .danny {
-    background-color: aqua;
-  }
+
+.box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 70px;
 }
