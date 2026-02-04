@@ -9,11 +9,11 @@ body {
 .grid-container {
   display: grid;
   grid-auto-columns: 200px;
-  grid-auto-rows: 200px;
+  grid-auto-rows: 1fr;
   gap: 1em;
   grid-template-areas:
-    "box-1 box-2 box-2 box-3"
-    "box-4 box-4 box-5 box-3";
+    "box-1 box-1 box-2 box-3"
+    "box-1 box-1 box-4 box-5";
 }
 .box {
   border-radius: 5px;
