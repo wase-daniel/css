@@ -30,14 +30,14 @@ body {
 /* 🔵 BLUE */
 .blue {
   background: #2563eb;
-  grid-area: 1 / 1 / 2 / 3;
+  grid-area: 1 / 3 / 3 / 4;
   z-index: 1;
 }
 
 /* 🟣 PURPLE (overlaps blue) */
 .purple {
   background: #a855f7;
-  grid-area: 1 / 2 / 3 / 4;
+  grid-area: 1 / 3 / 3 / 4;
   z-index: 2;
   opacity: 0.5;
 }
@@ -45,6 +45,6 @@ body {
 /* 🟢 GREEN */
 .green {
   background: #22c55e;
-  grid-area: 2 / 1 / 4 / 2;
+  grid-area: 1 / 3 / 3 / 4;
   z-index: 0;
 }
