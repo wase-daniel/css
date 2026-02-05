@@ -1,24 +1,50 @@
 body {
-  border: 4px solid black;
-  width: 500px;
-  height: 500px;
+  background: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
 }
 
-.box-1 {
-  background-color: blue;
-  height: 200px;
-  width: 200px;
-  grid-column: 1 / 3;
-  grid-row: 1 / 2;
-}
-.box-2 {
-  background-color: red;
-  height: 200px;
-  width: 200px;
-  grid-column: 2 / 4;
-}
-.container {
+.grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 120px);
+  gap: 10px;
+  width: 420px;
+  border: 2px dashed #9333ea;
+  padding: 10px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+/* 🔵 BLUE */
+.blue {
+  background: #2563eb;
+  grid-area: 1 / 1 / 2 / 3;
+  z-index: 1;
+}
+
+/* 🟣 PURPLE (overlaps blue) */
+.purple {
+  background: #a855f7;
+  grid-area: 1 / 2 / 3 / 4;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+/* 🟢 GREEN */
+.green {
+  background: #22c55e;
+  grid-area: 2 / 1 / 4 / 2;
+  z-index: 0;
 }
