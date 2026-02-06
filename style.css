@@ -1,50 +1,23 @@
-body {
-  background: #0f172a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: Arial, sans-serif;
-  color: white;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 120px);
-  gap: 10px;
-  width: 420px;
-  border: 2px dashed #9333ea;
-  padding: 10px;
-}
-
 .box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  font-size: 18px;
-  border-radius: 8px;
+  display: grid;
+  width: 300px;
+  height: 200px;
 }
 
-/* 🔵 BLUE */
-.blue {
-  background: #2563eb;
-  grid-area: 1 / 3 / 3 / 4;
-  z-index: 1;
+/* both items go in the SAME grid area */
+.bg,
+.text {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
 }
 
-/* 🟣 PURPLE (overlaps blue) */
-.purple {
-  background: #a855f7;
-  grid-area: 1 / 3 / 3 / 4;
-  z-index: 2;
-  opacity: 0.5;
+.bg {
+  background: purple;
 }
 
-/* 🟢 GREEN */
-.green {
-  background: #22c55e;
-  grid-area: 1 / 3 / 3 / 4;
-  z-index: 0;
+.text {
+  color: white;
+  font-size: 24px;
+  display: grid;
+  place-items: center;
 }
