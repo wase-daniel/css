@@ -1,23 +1,24 @@
-.box {
+.stack {
   display: grid;
-  width: 300px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 
-/* both items go in the SAME grid area */
-.bg,
-.text {
+.box {
   grid-row: 1 / 2;
   grid-column: 1 / 2;
 }
 
-.bg {
-  background: purple;
+.red {
+  background: red;
 }
 
-.text {
-  color: white;
-  font-size: 24px;
-  display: grid;
-  place-items: center;
+.blue {
+  background: blue;
+  opacity: 0.7;
+}
+
+.yellow {
+  background: yellow;
+  opacity: 0.4;
 }
