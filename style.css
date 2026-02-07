@@ -1,24 +1,23 @@
-.stack {
+.card {
   display: grid;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 180px;
 }
 
-.box {
+.layer {
   grid-row: 1 / 2;
   grid-column: 1 / 2;
 }
 
-.red {
-  background: red;
+.bg {
+  background: orange;
 }
 
-.blue {
-  background: blue;
-  opacity: 0.7;
-}
-
-.yellow {
-  background: yellow;
-  opacity: 0.4;
+.text {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 24px;
+  font-family: "Courier New", Courier, monospace;
+  display: grid;
+  place-items: center;
 }
