@@ -1,2 +1,2 @@
-const fluits = ["banana", "mango"];
-console.log("fluits");
+const fluits = ["fix", "masa"];
+console.log("flusads");
