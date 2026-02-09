@@ -1,2 +1,2 @@
 const fluits = ["fix", "masa"];
-console.log("flusads");
+console.log("flus");
