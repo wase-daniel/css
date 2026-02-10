@@ -1,5 +1,17 @@
+body {
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+
 .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: greenyellow;
+
   width: 200px;
   height: 200px;
   font-size: 40pt;
