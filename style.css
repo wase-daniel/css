@@ -1,29 +1,18 @@
 body {
   display: flex;
   gap: 2px;
+  border: 4px solid black;
+  min-height: 500px;
   justify-content: center;
   align-items: center;
-  height: 700px;
 }
 
 .box {
   display: flex;
-  justify-content: center;
-  align-items: center;
+
   background-color: greenyellow;
 
   width: 200px;
   height: 200px;
   font-size: 40pt;
-}
-
-@media (max-width: 906px) {
-  body {
-    background-color: black;
-    flex-wrap: wrap;
-  }
-  .box {
-    background-color: aquamarine;
-    border-radius: 7px;
-  }
 }
