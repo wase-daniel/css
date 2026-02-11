@@ -1,15 +1,22 @@
 body {
-  display: grid;
-  grid-auto-columns: 300px;
-  grid-auto-rows: 300px;
-  grid-auto-flow: column;
-  gap: 1em;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2%;
 }
 
 .box {
-  padding: 2em;
-  background-color: blue;
-  color: white;
+  background-color: rgb(41, 41, 255);
   border-radius: 5px;
-  font-size: 20pt;
+}
+#grid-container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 200px 200px;
+
+  gap: 1em;
+  grid-template-areas:
+    "box-2 box-2 box-2 box-3"
+    "box-1 box-4 box-5 box-5";
 }
